@@ -28,27 +28,28 @@ function Culture() {
   return (
     <div className="mt-24 rounded-4xl bg-neutral-950 py-24 sm:mt-32 lg:mt-40 lg:py-32">
       <SectionIntro
-        eyebrow="Our culture"
-        title="Balance your passion with your passion for life."
+        eyebrow="Nuestra cultura"
+        title="Balance entre las pasiones laborales y pasiones de la vida."
         invert
       >
-        <p>
-          We are a group of like-minded people who share the same core values.
-        </p>
+        <p>Somos un grupo unido que comparte los mismos valores.</p>
       </SectionIntro>
       <Container className="mt-16">
         <GridList>
-          <GridListItem title="Loyalty" invert>
-            Our team has been with us since the beginning because none of them
-            are allowed to have LinkedIn profiles.
+          <GridListItem title="Lealtad" invert>
+            Nos comprometemos a apoyar y respaldar a nuestros compañeros de
+            equipo en todo momento, construyendo relaciones sólidas basadas en
+            el respeto mutuo y la colaboración.
           </GridListItem>
-          <GridListItem title="Trust" invert>
-            We don’t care when our team works just as long as they are working
-            every waking second.
+          <GridListItem title="Confianza" invert>
+            Creemos en la transparencia y la comunicación abierta, creando un
+            entorno donde todos puedan expresar sus ideas libremente y confiar
+            en que serán escuchados y valorados.
           </GridListItem>
-          <GridListItem title="Compassion" invert>
-            You never know what someone is going through at home and we make
-            sure to never find out.
+          <GridListItem title="Pasion" invert>
+            Impulsados por la pasión por nuestro trabajo, abordamos cada
+            proyecto con entusiasmo y dedicación, buscando constantemente
+            superar las expectativas y lograr resultados excepcionales.
           </GridListItem>
         </GridList>
       </Container>
@@ -189,44 +190,56 @@ export default async function About() {
 
   return (
     <>
-      <PageIntro eyebrow="About us" title="Our strength is collaboration">
+      <PageIntro
+        eyebrow="Acerca de Nostros"
+        title="Nuestro fuerte es la Colaboración"
+      >
         <p>
-          We believe that our strength lies in our collaborative approach, which
-          puts our clients at the center of everything we do.
+          Creemos que nuestro fuerte esta en nuestro enfoque colaborativo,
+          situando al cliente en el centro de todas nuestros esfuerzos
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
-            Studio was started by three friends who noticed that developer
-            studios were charging clients double what an in-house team would
-            cost. Since the beginning, we have been committed to doing things
-            differently by charging triple instead.
+            Project Apollo nació de la visión compartida de dos amigos que
+            observaron la carencia de recursos digitales en muchas empresas
+            actuales. Desde nuestros inicios, nos hemos dedicado con fervor a
+            ofrecer ese impulso adicional que las empresas necesitan para
+            mejorar sus negocios. Nos mueve la pasión por brindar soluciones
+            digitales de calidad que permitan a nuestros clientes destacarse en
+            un mercado cada vez más competitivo.
           </p>
           <p>
-            At Studio, we’re more than just colleagues — we’re a family. This
-            means we pay very little and expect people to work late. We want our
-            employees to bring their whole selves to work. In return, we just
-            ask that they keep themselves there until at least 6:30pm.
+            No solo nos esforzamos por productos excepcionales, sino que también
+            valoramos profundamente el bienestar de nuestro equipo. Fomentamos
+            un ambiente de trabajo que promueve un equilibrio saludable entre la
+            vida laboral y personal. Desde flexibles horarios de trabajo hasta
+            iniciativas de bienestar y apoyo mutuo, nos esforzamos por cultivar
+            un entorno donde cada miembro del equipo pueda crecer, prosperar y
+            colaborar de manera efectiva. Creemos firmemente que nuestro enfoque
+            en el equipo nos permite alcanzar nuevos niveles de creatividad,
+            eficiencia y satisfacción del cliente, estableciendo así la base
+            para un futuro brillante y exitoso juntos.
           </p>
         </div>
       </PageIntro>
-      <Container className="mt-16">
-        <StatList>
-          <StatListItem value="35" label="Underpaid employees" />
-          <StatListItem value="52" label="Placated clients" />
-          <StatListItem value="$25M" label="Invoices billed" />
-        </StatList>
-      </Container>
+      {/*<Container className="mt-16">*/}
+      {/*  <StatList>*/}
+      {/*    <StatListItem value="35" label="Underpaid employees" />*/}
+      {/*    <StatListItem value="52" label="Placated clients" />*/}
+      {/*    <StatListItem value="$25M" label="Invoices billed" />*/}
+      {/*  </StatList>*/}
+      {/*</Container>*/}
 
       <Culture />
 
-      <Team />
+      {/*<Team />*/}
 
-      <PageLinks
-        className="mt-24 sm:mt-32 lg:mt-40"
-        title="From the blog"
-        intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."
-        pages={blogArticles}
-      />
+      {/*<PageLinks*/}
+      {/*  className="mt-24 sm:mt-32 lg:mt-40"*/}
+      {/*  title="From the blog"*/}
+      {/*  intro="Our team of experienced designers and developers has just one thing on their mind; working on your ideas to draw a smile on the face of your users worldwide. From conducting Brand Sprints to UX Design."*/}
+      {/*  pages={blogArticles}*/}
+      {/*/>*/}
 
       <ContactSection />
     </>

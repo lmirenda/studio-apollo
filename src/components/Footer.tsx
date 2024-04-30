@@ -127,7 +127,7 @@ export function Footer() {
             <Image className={'max-w-[45px]'} src={rocketLogo} alt={'logo'} />
           </Link>
           <p className="text-sm text-neutral-700">
-            © Studio Agency Inc. {new Date().getFullYear()}
+            Project Apollo {new Date().getFullYear()}
           </p>
         </div>
       </FadeIn>
