@@ -82,7 +82,7 @@ function Header({
           {/*  filled={logoHovered}*/}
           {/*/>*/}
           <Image
-            className={'max-w-[250px]'}
+            className={'sm:max-w-[150px] lg:max-w-[250px]'}
             src={projectApolloLogo}
             alt={'logo'}
           />
