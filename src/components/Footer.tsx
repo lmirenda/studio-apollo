@@ -11,16 +11,16 @@ const navigation = [
   // {
   //   title: 'Work',
   //   links: [
-  //     { title: 'FamilyFund', href: '/work/family-fund' },
-  //     { title: 'Unseal', href: '/work/unseal' },
-  //     { title: 'Phobia', href: '/work/phobia' },
+  //     { title: 'FamilyFund', href: '/_work/family-fund' },
+  //     { title: 'Unseal', href: '/_work/unseal' },
+  //     { title: 'Phobia', href: '/_work/phobia' },
   //     {
   //       title: (
   //         <>
   //           See all <span aria-hidden="true">&rarr;</span>
   //         </>
   //       ),
-  //       href: '/work',
+  //       href: '/_work',
   //     },
   //   ],
   // },
@@ -29,7 +29,7 @@ const navigation = [
     links: [
       { title: 'About', href: '/about' },
       { title: 'Process', href: '/process' },
-      // { title: 'Blog', href: '/blog' },
+      // { title: 'Blog', href: '/_blog' },
       { title: 'Contact us', href: '/contact' },
     ],
   },

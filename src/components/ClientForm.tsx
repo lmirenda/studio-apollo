@@ -44,9 +44,12 @@ export default function ContactForm() {
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Presupuestos y Consultas
         </h2>
+        <p className={'text-xs text-gray-400'}>
+          Los campos indicados con * son requeridos
+        </p>
         <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
           <TextInput
-            label="Nombre"
+            label="Nombre*"
             name="name"
             autoComplete="name"
             value={formData?.name}
@@ -55,7 +58,7 @@ export default function ContactForm() {
             error={errors?.name}
           />
           <TextInput
-            label="Email"
+            label="Email*"
             type="email"
             name="email"
             autoComplete="email"
@@ -63,6 +66,16 @@ export default function ContactForm() {
             onChange={handleChange}
             register={register}
             error={errors?.email}
+          />
+          <TextInput
+            label="Telefono*"
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+            value={formData.phone}
+            onChange={handleChange}
+            register={register}
+            error={errors?.phone}
           />
           <TextInput
             label="Empresa"
@@ -74,14 +87,12 @@ export default function ContactForm() {
             error={errors?.company}
           />
           <TextInput
-            label="Telefono"
-            type="tel"
-            name="phone"
-            autoComplete="tel"
-            value={formData.phone}
+            label="Presupuesto"
+            name="budget"
+            value={formData.budget}
             onChange={handleChange}
             register={register}
-            error={errors?.phone}
+            error={errors?.budget}
           />
           <TextInput
             label="Mensaje"
@@ -91,39 +102,6 @@ export default function ContactForm() {
             register={register}
             error={errors?.message}
           />
-          <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
-            <fieldset {...register('budget')}>
-              <legend className="text-base/6 text-neutral-500">
-                Presupuesto (1k = 1000USD)
-              </legend>
-              <div className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2">
-                <RadioInput
-                  label="Menos de 1K"
-                  name="budget"
-                  value="<1000"
-                  onChange={handleChange}
-                />
-                <RadioInput
-                  label="Entre $1K y $5K"
-                  name="budget"
-                  value="1000 a 5000"
-                  onChange={handleChange}
-                />
-                <RadioInput
-                  label="Entre $5K y $10K"
-                  name="budget"
-                  value="5000 a 10000"
-                  onChange={handleChange}
-                />
-                <RadioInput
-                  label="Mas de $10K"
-                  name="budget"
-                  value=">10000"
-                  onChange={handleChange}
-                />
-              </div>
-            </fieldset>
-          </div>
         </div>
 
         {isSubmitting ? (

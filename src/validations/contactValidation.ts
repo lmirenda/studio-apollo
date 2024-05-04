@@ -6,8 +6,8 @@ export const contactFormSchema = yup.object().shape({
     .string()
     .email('El formato es incorrecto')
     .required('Email es un campo requerido'),
-  company: yup.string().required('Empresa es un campo requerido'),
-  message: yup.string().required('Mensaje es un campo requerido'),
   phone: yup.string().required('Telefono es un campo requerido'),
+  company: yup.string().optional(),
+  message: yup.string().optional(),
   budget: yup.string().optional(),
 })

@@ -21,6 +21,7 @@ import logoUnseal from '@/images/clients/unseal/logo-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import GradientText from '@/components/GradientText'
+import rocketLogo from '@/images/rocketLogo.png'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -92,28 +93,17 @@ function CaseStudies({
             <FadeIn key={caseStudy.href} className="flex">
               <article className="relative flex w-full flex-col rounded-3xl p-6 ring-1 ring-neutral-950/5 transition hover:bg-neutral-50 sm:p-8">
                 <h3>
-                  <Link href={caseStudy.href}>
+                  <Link href={'about'}>
                     <span className="absolute inset-0 rounded-3xl" />
                     <Image
                       src={caseStudy.logo}
-                      alt={caseStudy.client}
+                      alt={caseStudy.title}
                       className="h-16 w-16"
                       unoptimized
                     />
                   </Link>
                 </h3>
-                <p className="mt-6 flex gap-x-2 text-sm text-neutral-950">
-                  <time
-                    dateTime={caseStudy.date.split('-')[0]}
-                    className="font-semibold"
-                  >
-                    {caseStudy.date.split('-')[0]}
-                  </time>
-                  <span className="text-neutral-300" aria-hidden="true">
-                    /
-                  </span>
-                  <span>Case study</span>
-                </p>
+
                 <p className="mt-6 font-display text-2xl font-semibold text-neutral-950">
                   {caseStudy.title}
                 </p>
@@ -193,8 +183,8 @@ export default async function Home() {
 
   return (
     <>
-      <Container className="md:mt-56s bg mt-24 sm:mt-32">
-        <FadeIn className="max-w-3xl">
+      <div className="md:mt-56s bg lg:px-8' mx-auto mt-24 flex max-w-7xl flex-wrap justify-between px-6 sm:mt-32">
+        <FadeIn className="max-w-3xl flex-grow">
           <h3 className=" mb-6 text-neutral-600">
             {' '}
             ¡Lleva tu negocio al siguiente nivel hoy mismo!
@@ -209,20 +199,25 @@ export default async function Home() {
             empresas. Desde páginas web cautivadoras hasta branding distntivo
           </p>
         </FadeIn>
-      </Container>
+        <Image
+          src={rocketLogo}
+          alt={'test'}
+          className={'hidden max-w-sm xl:block'}
+        />
+      </div>
 
-      <Clients />
+      {/*<Clients />*/}
 
       <CaseStudies caseStudies={caseStudies} />
 
-      <Testimonial
-        className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: 'Phobia', logo: logoPhobiaDark }}
-      >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user’s microphone without triggering one of
-        those annoying permission dialogs.
-      </Testimonial>
+      {/*<Testimonial*/}
+      {/*  className="mt-24 sm:mt-32 lg:mt-40"*/}
+      {/*  client={{ name: 'Phobia', logo: logoPhobiaDark }}*/}
+      {/*>*/}
+      {/*  The team at Studio went above and beyond with our onboarding, even*/}
+      {/*  finding a way to access the user’s microphone without triggering one of*/}
+      {/*  those annoying permission dialogs.*/}
+      {/*</Testimonial>*/}
 
       <Services />
 

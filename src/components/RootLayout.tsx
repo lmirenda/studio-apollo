@@ -89,7 +89,7 @@ function Header({
         </Link>
         <div className="flex items-center gap-x-8">
           <Button href="/contact" invert={invert}>
-            Contactanos
+            Contacto
           </Button>
           <button
             ref={toggleRef}
@@ -150,12 +150,12 @@ function Navigation() {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        {/*<NavigationItem href="/work">Our Work</NavigationItem>*/}
+        {/*<NavigationItem href="/_work">Our Work</NavigationItem>*/}
         <NavigationItem href="/process">Nuestro Proceso</NavigationItem>
         <NavigationItem href="/about">Sobre Nostros</NavigationItem>
       </NavigationRow>
       {/*<NavigationRow>*/}
-      {/*<NavigationItem href="/blog">Blog</NavigationItem>*/}
+      {/*<NavigationItem href="/_blog">Blog</NavigationItem>*/}
       {/*</NavigationRow>*/}
     </nav>
   )
@@ -236,25 +236,25 @@ function RootLayoutInner({ children }: { children: React.ReactNode }) {
             </div>
             <Navigation />
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
-              <Container>
-                <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
-                  <div>
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Our offices
-                    </h2>
-                    <Offices
-                      invert
-                      className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"
-                    />
-                  </div>
-                  <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <h2 className="font-display text-base font-semibold text-white">
-                      Follow us
-                    </h2>
-                    <SocialMedia className="mt-6" invert />
-                  </div>
-                </div>
-              </Container>
+              {/*<Container>*/}
+              {/*  <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">*/}
+              {/*    <div>*/}
+              {/*      <h2 className="font-display text-base font-semibold text-white">*/}
+              {/*        Our offices*/}
+              {/*      </h2>*/}
+              {/*      <Offices*/}
+              {/*        invert*/}
+              {/*        className="mt-6 grid grid-cols-1 gap-8 sm:grid-cols-2"*/}
+              {/*      />*/}
+              {/*    </div>*/}
+              {/*    <div className="sm:border-l sm:border-transparent sm:pl-16">*/}
+              {/*      <h2 className="font-display text-base font-semibold text-white">*/}
+              {/*        Follow us*/}
+              {/*      </h2>*/}
+              {/*      <SocialMedia className="mt-6" invert />*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</Container>*/}
             </div>
           </motion.div>
         </motion.div>
