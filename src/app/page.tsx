@@ -199,9 +199,7 @@ export default async function Home() {
             empresas. Desde páginas web cautivadoras hasta branding distintivo
           </p>
           <span className="mt-16 animate-text rounded-full bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 p-4 font-semibold text-white hover:cursor-pointer">
-            <Link href={'contact'}>
-              Lleva tu negocio al proximo nivel ahora!
-            </Link>
+            <Link href={'contact'}>Contactanos ahora!</Link>
           </span>
         </FadeIn>
         <Image
@@ -209,12 +207,9 @@ export default async function Home() {
           alt={'test'}
           className={'hidden max-w-sm xl:block'}
         />
-      </div>
-
+      </div>{' '}
       {/*<Clients />*/}
-
       <CaseStudies caseStudies={caseStudies} />
-
       {/*<Testimonial*/}
       {/*  className="mt-24 sm:mt-32 lg:mt-40"*/}
       {/*  client={{ name: 'Phobia', logo: logoPhobiaDark }}*/}
@@ -223,9 +218,7 @@ export default async function Home() {
       {/*  finding a way to access the user’s microphone without triggering one of*/}
       {/*  those annoying permission dialogs.*/}
       {/*</Testimonial>*/}
-
       <Services />
-
       <ContactSection />
     </>
   )
