@@ -22,6 +22,7 @@ import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import GradientText from '@/components/GradientText'
 import rocketLogo from '@/images/rocketLogo.png'
+import React from 'react'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -83,8 +84,7 @@ function CaseStudies({
         <p>
           Sea cual sea tu desafío digital, estamos aquí para ayudarte a
           superarlo. Descubre cómo nuestros servicios pueden ser la respuesta
-          que estás buscando. Haz clic en la tarjeta que mejor se ajuste a tus
-          necesidades y comienza a transformar tu negocio hoy mismo.
+          que estás buscando.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -193,11 +193,16 @@ export default async function Home() {
             Despega tu negocio a la web con{' '}
             <GradientText>Proyecto Apollo</GradientText>
           </h1>
-          <p className="mt-6 text-xl text-neutral-600">
+          <p className="mb-16 mt-6 text-xl text-neutral-600">
             Evoluciona tu marca e impulsa tu presencia online. Nos dedicamos a
             crear soluciones digitales a medida para pequeñas y medianas
-            empresas. Desde páginas web cautivadoras hasta branding distntivo
+            empresas. Desde páginas web cautivadoras hasta branding distintivo
           </p>
+          <span className="mt-16 animate-text rounded-full bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 p-4 text-white hover:cursor-pointer">
+            <Link href={'contact'}>
+              Lleva tu negocio al proximo nivel ahora!
+            </Link>
+          </span>
         </FadeIn>
         <Image
           src={rocketLogo}
