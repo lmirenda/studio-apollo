@@ -198,7 +198,7 @@ export default async function Home() {
             crear soluciones digitales a medida para pequeñas y medianas
             empresas. Desde páginas web cautivadoras hasta branding distintivo
           </p>
-          <span className="mt-16 animate-text rounded-full bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 p-4 text-white hover:cursor-pointer">
+          <span className="mt-16 animate-text rounded-full bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 p-4 font-semibold text-white hover:cursor-pointer">
             <Link href={'contact'}>
               Lleva tu negocio al proximo nivel ahora!
             </Link>
