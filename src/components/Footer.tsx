@@ -25,18 +25,18 @@ const navigation = [
   //   ],
   // },
   {
-    title: 'Company',
+    title: 'Compañia',
     links: [
-      { title: 'About', href: '/about' },
-      { title: 'Process', href: '/process' },
+      { title: 'Nosotros', href: '/about' },
+      { title: 'Nuestro Proceso', href: '/process' },
       // { title: 'Blog', href: '/_blog' },
-      { title: 'Contact us', href: '/contact' },
+      { title: 'Contacto', href: '/contact' },
     ],
   },
-  {
-    title: 'Connect',
-    links: socialMediaProfiles,
-  },
+  //{
+    //title: 'Connect',
+    //links: socialMediaProfiles,
+  //},
 ]
 
 function Navigation() {

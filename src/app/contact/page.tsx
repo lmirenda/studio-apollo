@@ -15,7 +15,7 @@ import ContactForm from '@/components/ClientForm'
 function ContactDetails() {
   return (
     <FadeIn>
-      <h2 className="font-display text-base font-semibold text-neutral-950">
+      {/* <h2 className="font-display text-base font-semibold text-neutral-950">
         Oportunidades laborales
       </h2>
       <p className="mt-6 text-base text-neutral-600">
@@ -37,7 +37,7 @@ function ContactDetails() {
             </dd>
           </div>
         ))}
-      </dl>
+      </dl> */}
 
       {/*<Offices className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-2" />*/}
 
@@ -46,11 +46,11 @@ function ContactDetails() {
           Otras consultas
         </h2>
         <p className="mt-6 text-base text-neutral-600">
-          Por si no encuentras lo que estas buscando, tienes dudas, o cualquier
-          otra consulta no relacionada
+          Si no encontrás lo que estás buscando, tenés dudas, o cualquier
+          otra consulta no relacionada...
         </p>
         <dl className="mt-6 grid grid-cols-1 gap-8 text-sm sm:grid-cols-2">
-          {[['Otras consultas', 'other@projectapollo.com']].map(
+          {[['Otras consultas', 'project.apollo.base@gmail.com']].map(
             ([label, email]) => (
               <div key={email}>
                 <dt className="font-semibold text-neutral-950">{label}</dt>
@@ -68,12 +68,12 @@ function ContactDetails() {
         </dl>
       </Border>
 
-      <Border className="mt-16 pt-16">
+{/*       <Border className="mt-16 pt-16">
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Follow us
         </h2>
         <SocialMedia className="mt-6" />
-      </Border>
+      </Border> */}
     </FadeIn>
   )
 }
@@ -86,10 +86,9 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Contactanos">
+      <PageIntro eyebrow="" title="Contactanos">
         <p>
-          Queremos escucharte, ya sea para formar parte del equipo o para
-          iniciar tu proyecto. No dudes en escribirnos!
+          Queremos escucharte, ¡no dudes en escribirnos!
         </p>
       </PageIntro>
 

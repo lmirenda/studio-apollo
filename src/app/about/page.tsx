@@ -192,33 +192,19 @@ export default async function About() {
     <>
       <PageIntro
         eyebrow="Acerca de Nostros"
-        title="Nuestro fuerte es la Colaboración"
+        title="Nuestro fuerte es el compromiso con el CLIENTE"
       >
         <p>
-          Creemos que nuestro fuerte esta en nuestro enfoque colaborativo,
-          situando al cliente en el centro de todas nuestros esfuerzos
+        Colocamos al cliente en el centro de todo lo que hacemos.
         </p>
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
             Project Apollo nació de la visión compartida de dos amigos que
             observaron la carencia de recursos digitales en muchas empresas
-            actuales. Desde nuestros inicios, nos hemos dedicado con fervor a
-            ofrecer ese impulso adicional que las empresas necesitan para
+            actuales. Por eso ofrecemos ese impulso adicional que las empresas necesitan para
             mejorar sus negocios. Nos mueve la pasión por brindar soluciones
-            digitales de calidad que permitan a nuestros clientes destacarse en
-            un mercado cada vez más competitivo.
-          </p>
-          <p>
-            No solo nos esforzamos por productos excepcionales, sino que también
-            valoramos profundamente el bienestar de nuestro equipo. Fomentamos
-            un ambiente de trabajo que promueve un equilibrio saludable entre la
-            vida laboral y personal. Desde flexibles horarios de trabajo hasta
-            iniciativas de bienestar y apoyo mutuo, nos esforzamos por cultivar
-            un entorno donde cada miembro del equipo pueda crecer, prosperar y
-            colaborar de manera efectiva. Creemos firmemente que nuestro enfoque
-            en el equipo nos permite alcanzar nuevos niveles de creatividad,
-            eficiencia y satisfacción del cliente, estableciendo así la base
-            para un futuro brillante y exitoso juntos.
+            de calidad que permitan a nuestros clientes destacarse en
+            mercados cada vez más competitivos.
           </p>
         </div>
       </PageIntro>
