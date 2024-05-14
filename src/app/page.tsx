@@ -22,6 +22,7 @@ import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 import GradientText from '@/components/GradientText'
 import rocketLogo from '@/images/rocketLogo.png'
+import React from 'react'
 
 const clients = [
   ['Phobia', logoPhobiaLight],
@@ -181,23 +182,23 @@ export default async function Home() {
             Despegá tu negocio a la web con{' '}
             <GradientText>Proyecto Apollo</GradientText>
           </h1>
-          <p className="mt-6 text-xl text-neutral-600">
-            Evolucioná tu marca e impulsá tu presencia online. Nos dedicamos a
-            crear soluciones digitales para pequeñas y medianas
+          <p className="mb-16 mt-6 text-xl text-neutral-600">
+            Evoluciona tu marca e impulsa tu presencia online. Nos dedicamos a
+            crear soluciones digitales a medida para pequeñas y medianas
             empresas. Desde páginas web cautivadoras hasta branding distintivo.
           </p>
+          <span className="mt-16 animate-text rounded-full bg-gradient-to-r from-teal-500 via-purple-500 to-orange-500 p-4 font-semibold text-white hover:cursor-pointer">
+            <Link href={'contact'}>Contactanos ahora!</Link>
+          </span>
         </FadeIn>
         <Image
           src={rocketLogo}
           alt={'test'}
           className={'hidden max-w-sm xl:block'}
         />
-      </div>
-
+      </div>{' '}
       {/*<Clients />*/}
-
       <CaseStudies caseStudies={caseStudies} />
-
       {/*<Testimonial*/}
       {/*  className="mt-24 sm:mt-32 lg:mt-40"*/}
       {/*  client={{ name: 'Phobia', logo: logoPhobiaDark }}*/}
@@ -206,9 +207,7 @@ export default async function Home() {
       {/*  finding a way to access the user’s microphone without triggering one of*/}
       {/*  those annoying permission dialogs.*/}
       {/*</Testimonial>*/}
-
       <Services />
-
       <ContactSection />
     </>
   )
