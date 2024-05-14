@@ -71,20 +71,18 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Aborda tus Desafíos Digitales"
+        title="Abordá tus Desafíos Digitales"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p className={'mb-4'}>
-          ¿Tu negocio lucha por destacarse en línea? ¿Necesitas una identidad de
-          marca sólida para diferenciarte en un mercado saturado? ¿O quizás
-          buscas soluciones tecnológicas personalizadas para resolver problemas
+          ¿Tu negocio lucha por destacarse? ¿Necesitás una identidad de 
+          marca sólida para diferenciarte en un mercado saturado? ¿Buscás
+          soluciones personalizadas para resolver problemas
           específicos de tu empresa?
         </p>
         <p>
-          Sea cual sea tu desafío digital, estamos aquí para ayudarte a
-          superarlo. Descubre cómo nuestros servicios pueden ser la respuesta
-          que estás buscando. Haz clic en la tarjeta que mejor se ajuste a tus
-          necesidades y comienza a transformar tu negocio hoy mismo.
+          Haz clic en la tarjeta que mejor se ajuste a tus
+          necesidades y transformá tu negocio hoy mismo.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -124,15 +122,12 @@ function Services() {
     <>
       <SectionIntro
         eyebrow="Servicios"
-        title="Ayudamos a identificar, explorar y responder a nuevas oportunidades."
+        title="Potenciamos el crecimiento de tu negocio con herramientas digitales."
         className="mt-24 sm:mt-32 lg:mt-40 "
       >
         <p>
-          Nos especializamos en potenciar el crecimiento de tu negocio mediante
-          herramientas digitales. Desde identificar nuevas oportunidades de
-          mercado hasta crear productos innovadores, nuestro enfoque se centra
-          en aprovechar al máximo el poder de la tecnología para impulsar tu
-          éxito empresarial.
+        Nuestro enfoque se centra en aprovechar al máximo el poder de la
+        tecnología para impulsar tu éxito empresarial.
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -149,22 +144,15 @@ function Services() {
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
             <ListItem title="Sitios Web">
               Creación de sitios web personalizados que reflejen la identidad
-              única de tu marca y maximicen la experiencia del usuario.
-            </ListItem>
-            <ListItem title="Aplicaciones Web">
-              Desarrollo de plataformas escalables y seguras, adaptadas a tus
-              necesidades específicas y diseñadas para impulsar el crecimiento
-              de tu negocio en línea.
+              de tu marca y maximicen la experiencia del usuario.
             </ListItem>
             <ListItem title="Branding e identidad de marca">
-              Desarrollo de estrategias de branding sólidas y coherentes que
-              ayuden a diferenciar tu marca en el mercado y a crear conexiones
-              emocionales duraderas con tu audiencia objetivo.
+              Desarrollo de estrategias de branding para diferenciar tu marca y conectar
+              con tu mercado objetivo.
             </ListItem>
             <ListItem title="Soluciones Personalizadas">
-              Creación de soluciones digitales personalizadas que se adapten
-              perfectamente a los requisitos únicos de tu negocio, desde
-              aplicaciones móviles hasta sistemas de gestión de contenido.
+              Creación de soluciones que se adapten
+              perfectamente a tus requisitos.
             </ListItem>
           </List>
         </div>
@@ -187,16 +175,16 @@ export default async function Home() {
         <FadeIn className="max-w-3xl flex-grow">
           <h3 className=" mb-6 text-neutral-600">
             {' '}
-            ¡Lleva tu negocio al siguiente nivel hoy mismo!
+            ¡Llevá tu negocio al siguiente nivel hoy mismo!
           </h3>
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Despega tu negocio a la web con{' '}
+            Despegá tu negocio a la web con{' '}
             <GradientText>Proyecto Apollo</GradientText>
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            Evoluciona tu marca e impulsa tu presencia online. Nos dedicamos a
-            crear soluciones digitales a medida para pequeñas y medianas
-            empresas. Desde páginas web cautivadoras hasta branding distntivo
+            Evolucioná tu marca e impulsá tu presencia online. Nos dedicamos a
+            crear soluciones digitales para pequeñas y medianas
+            empresas. Desde páginas web cautivadoras hasta branding distintivo.
           </p>
         </FadeIn>
         <Image

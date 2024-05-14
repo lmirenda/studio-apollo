@@ -58,7 +58,7 @@ function Discover() {
     <Section title="Descubrimiento" image={{ src: imageWhiteboard }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          En Project Apollo, no creemos en soluciones genéricas. Nos sumergimos
+          No creemos en soluciones genéricas. Nos sumergimos
           en tu mundo empresarial para desentrañar los secretos detrás de tu
           éxito. ¿Cómo lo hacemos?
         </p>
@@ -67,7 +67,7 @@ function Discover() {
             Colaboración Estrecha:{' '}
           </strong>
           Trabajamos codo a codo con nuestros clientes para comprender sus
-          necesidades y objetivos . Nos involucramos en sus operaciones diarias
+          necesidades. Nos involucramos en sus operaciones diarias
           para entender qué impulsa su negocio.
         </p>
         <p>
@@ -85,23 +85,7 @@ function Discover() {
           Utilizamos nuestro conocimiento y experiencia para identificar
           oportunidades y desafíos únicos en tu industria.
         </p>
-        <p>
-          Una vez terminada la etapa de descubrimiento y auditoria, reportamos
-          con un informe comprensivo y presupuesto Once the full audit is
-          complete, we report back with a comprehensive{' '}
-        </p>
       </div>
-
-      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Incluido en esta estapa:
-      </h3>
-      <TagList className="mt-4">
-        <TagListItem>Cuestionarios en detalles</TagListItem>
-        <TagListItem>Estudios de viabilidad</TagListItem>
-        <TagListItem>Objetivos del sitio</TagListItem>
-        <TagListItem>Maquetado de bajo nivel</TagListItem>
-        <TagListItem>Identificacion de requerimientos funcionales</TagListItem>
-      </TagList>
     </Section>
   )
 }
@@ -110,13 +94,6 @@ function Build() {
   return (
     <Section title="Desarrollo" image={{ src: imageLaptop, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
-        <p>
-          <strong className="font-semibold text-neutral-950">
-            Planificación Detallada:{' '}
-          </strong>
-          Convertimos las ideas y conceptos descubiertos en una hoja de ruta
-          concreta y detallada.
-        </p>{' '}
         <p>
           <strong className="font-semibold text-neutral-950">
             Ejecución Precisa:{' '}
@@ -129,7 +106,7 @@ function Build() {
           <strong className="font-semibold text-neutral-950">
             Iteración Constante:{' '}
           </strong>
-          A medida que avanzamos, ajustamos y refinamos continuamente para
+          Ajustamos y refinamos continuamente para
           asegurarnos de que cada aspecto esté alineado con tus necesidades y
           expectativas.
         </p>
@@ -150,7 +127,6 @@ function Deliver() {
   return (
     <Section title="Entrega" image={{ src: imageMeeting, shape: 2 }}>
       <div className="space-y-6 text-base text-neutral-600">
-        <p>Llegó el momento más emocionante: la entrega de tu proyecto!</p>
         <p>
           <strong className="font-semibold text-neutral-950">
             Entrega a Tiempo:{' '}
@@ -170,9 +146,8 @@ function Deliver() {
           <strong className="font-semibold text-neutral-950">
             Soporte Continuo:{' '}
           </strong>
-          Nuestro compromiso no termina con la entrega. Estamos aquí para
-          brindarte soporte continuo y garantizar que tu proyecto siga
-          funcionando sin problemas.
+          Nuestro compromiso no termina con la entrega. Brindamos soporte continuo para 
+          garantizar que tu proyecto siga funcionando sin problemas.
         </p>
       </div>
 
@@ -182,21 +157,10 @@ function Deliver() {
       <List className="mt-8">
         <ListItem title="Infrastructura">
           Manejamos la infraestructura de tu sitio para garantizar que tu sitio
-          web, aplicaciones y otras plataformas digitales estén siempre
-          disponibles cuando tus usuarios y clientes los necesiten.
-        </ListItem>
-        <ListItem title="Soporte">
-          Nuestro equipo de expertos está disponible para responder tus
-          preguntas, resolver problemas y ofrecerte orientación personalizada en
-          cualquier momento.
-        </ListItem>
-        <ListItem title="Actualizaciones Continuas">
-          Mantenemos tus soluciones digitales actualizadas con las versiones
-          para garantizar que sigan siendo efectivas y relevantes con el tiempo.
+          web esté siempre disponible cuando tus clientes lo necesiten.
         </ListItem>
         <ListItem title="Capacitación">
-          Ofrecemos capacitación y recursos para que tu equipo pueda aprovechar
-          al máximo tus soluciones digitales. Intruimos y explicamos como hacer
+          Intruimos y explicamos como hacer
           el uso de las herramientas digitales para alcanzar su máximo
           potencial.
         </ListItem>
@@ -221,11 +185,9 @@ function Values() {
       >
         <p>
           En Project Apollo, nos destacamos por equilibrar la fiabilidad con la
-          innovación, ofreciendo soluciones digitales que combinan la
-          estabilidad necesaria para el éxito a largo plazo con la creatividad
-          que impulsa el crecimiento y la escalabilidad. Nos dedicamos a ayudar
+          innovación.  Nos dedicamos a ayudar
           a negocios a escalar, brindándoles las herramientas y el apoyo
-          necesario para alcanzar nuevas alturas en un mundo digital en
+          necesario para alcanzar nuevas alturas en un mundo en
           constante evolución.
         </p>
       </SectionIntro>
